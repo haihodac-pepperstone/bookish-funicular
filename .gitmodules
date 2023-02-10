@@ -1,0 +1,3 @@
+[submodule "glowing-parakeet"]
+	path = glowing-parakeet
+	url = https://github.com/haihodac-pepperstone/glowing-parakeet.git
