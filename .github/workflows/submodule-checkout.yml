@@ -1,6 +1,6 @@
 name: check-submodule
 
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   check-submodules:
@@ -21,7 +21,5 @@ jobs:
       with:
         path: "glowing-parakeet"
         branch: "main"
-        first_parent: true
-        fetch_depth: "50"
         pass_if_unchanged: true
         require_head: true
