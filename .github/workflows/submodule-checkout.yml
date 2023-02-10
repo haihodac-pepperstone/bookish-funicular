@@ -9,17 +9,17 @@ jobs:
     steps:
     - name: Checkout this repo
       uses: actions/checkout@v3
-    ## Step only reqired for private submodules
-    - name: Checkout submodule repo
-      uses: actions/checkout@v3
-      with:
-        repository: haihodac-pepperstone/glowing-parakeet
-        path: "./glowing-parakeet"
-        token: ${{ secrets.PAT_for_Private_Submodule }}
+    # ## Step only reqired for private submodules
+    # - name: Checkout submodule repo
+    #   uses: actions/checkout@v3
+    #   with:
+    #     repository: haihodac-pepperstone/glowing-parakeet
+    #     path: "./glowing-parakeet"
+    #     token: ${{ secrets.PAT_for_Private_Submodule }}
     - name: Check Submodule Name
       uses: jtmullen/submodule-branch-check-action@v1
       with:
-        path: "./glowing-parakeet"
+        path: "glowing-parakeet"
         branch: "main"
         first_parent: true
         fetch_depth: "50"
