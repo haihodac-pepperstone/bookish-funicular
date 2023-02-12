@@ -15,7 +15,7 @@ jobs:
       with:
         repository: haihodac-pepperstone/glowing-parakeet
         path: "./glowing-parakeet"
-        token: ${{ secrets.PAT_FOR_PRIVATE_SUBMODULE }}
+        token: ${{ secrets.CLONE_SUBMODULE }}
         submodules: recursive
     - name: Check Submodule Name
       uses: jtmullen/submodule-branch-check-action@v1
