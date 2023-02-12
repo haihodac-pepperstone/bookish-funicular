@@ -14,8 +14,8 @@ jobs:
       uses: actions/checkout@v3
       with:
         repository: haihodac-pepperstone/glowing-parakeet
-        path: "./glowing-parakeet"
-        token: ${{ secrets.PAT_for_Private_Submodule }}
+        path: "glowing-parakeet"
+        token: ${{ secrets.PAT_FOR_PRIVATE_SUBMODULE }}
     - name: Check Submodule Name
       uses: jtmullen/submodule-branch-check-action@v1
       with:
