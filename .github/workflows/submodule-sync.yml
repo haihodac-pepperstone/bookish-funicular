@@ -4,6 +4,9 @@ on:
   # Allows you to run this workflow manually from the Actions tab or through HTTP API
   workflow_dispatch:
 
+  repository_dispatch:
+    types: [submodule-update]
+
 jobs:
   sync:
     name: 'Submodules Sync'
@@ -17,7 +20,7 @@ jobs:
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         token: ${{ secrets.CLONE_SUBMODULE }}
         submodules: true
