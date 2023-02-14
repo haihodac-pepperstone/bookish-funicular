@@ -22,5 +22,5 @@ jobs:
       with:
         path: "glowing-parakeet"
         branch: "main"
-        pass_if_unchanged: true
+        # pass_if_unchanged: true
         require_head: true
