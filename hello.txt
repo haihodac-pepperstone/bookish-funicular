@@ -2,3 +2,4 @@ hello_kitty
 hello_world
 mickey_mouse
 pluto_dog
+daisy_cow
