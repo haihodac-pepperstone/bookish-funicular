@@ -61,7 +61,7 @@ jobs:
         # assignees: haihodac-pepperstone
         assignees: ${{ github.event.client_payload.author }}
         # reviewers: haihodac-pepperstone
-        team-reviewers: |
-          owners
-          maintainers
+#         team-reviewers: |
+#           owners
+#           maintainers
         draft: false
